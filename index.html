@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">José</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil-jose.png" alt="">
+            </div>
+            <h1>JOSÉ BARRERA</h1>
+            <h2>Desarrollador Web</h2>
+            <div class="redes">
+                <a target="_blank" href="https://twitter.com/programacion96"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://github.com/josebarrera1996"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jose-luis-barrera-27968a229/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy José Barrera.</span> Como recién graduado, estoy en busca de mi primera experiencia en
+                este maravilloso mundo del desarrollo web. Me comprometo a
+                esforzarme en cumplir con las tareas y exigencias que me sean dadas,
+                así como colaborar de manera activa con el grupo de trabajo en el que
+                me toque estar.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            26-01-1996
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2616 780841
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            josebarrerag1996@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Luján de Cuyo, Mendoza, Argentina
+                        </li>
+                        <li>
+                            <strong>Situación laboral</strong>
+                            <span>En busca de trabajo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-pizza-slice"></i>
+                            <span>COMIDAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>TECNOLOGÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://files.fm/u/vsat6qcuv" target="_blank">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de datos (SQL & NoSQL)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node Js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React Js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Auto-didacta</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a target="_blank" href="https://github.com/josebarrera1996/Tech-Notes">
+                        <img src="img/proyecto1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Programación</h3>
+                            <p>techNotes</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a target="_blank" href="https://github.com/josebarrera1996/API_Rest-Nodejs-Typescript">
+                        <img src="img/proyecto2.png" alt="">
+                        <div class="overlay">
+                            <h3>Programación</h3>
+                            <p>API Rest (NodeJs + TS)</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a target="_blank" href="https://github.com/josebarrera1996/Aportes-de-React">
+                        <img src="img/proyecto3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Programación</h3>
+                            <p>Aportes de React</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a target="_blank" href="https://github.com/josebarrera1996/API-Rest-con-NodeJS-TypeScript-">
+                        <img src="img/proyecto4.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Programación</h3>
+                            <p>API Rest (MongoDB + NodeJs)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form id="form" name="simple-contact-form" accept-charset="utf-8"
+                    action="https://formspree.io/f/mknapyjd" method="post" class="col">
+                    <fieldset id="fs-frm-inputs">
+                        <label for="full-name"></label>
+                        <input type="text" name="name" id="full-name" placeholder="Ingresa tu nombre" required="">
+                        <label for="email-address"></label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                            required="">
+                        <label for="message"></label>
+                        <textarea rows="5" name="message" id="message" placeholder="Podés dejarme un mensaje."
+                            required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Contacto -->
+                <div class="col">
+                    <img src="img/formulario1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a target="_blank" href="https://twitter.com/programacion96"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://github.com/josebarrera1996"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jose-luis-barrera-27968a229/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
